@@ -1,0 +1,528 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17.62px;
+    background-color: transparent !important;
+}
+
+/* .circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid gray;
+    z-index: 100;
+}
+
+.circle-smaller {
+    width: 15px;
+    height: 15px;
+    border: 2px solid gray !important;
+    background: #fff;
+}
+
+.circle-smaller::after {
+    z-index: 1;
+    background: #fff;
+}
+
+#topi {
+    z-index: 10000;
+}
+
+#topi::after {
+    background-color: white;
+}
+
+.circle-smallest {
+    width: 10px;
+    height: 10px;
+    border: 2px solid gray !important;
+    background-color: white;
+}
+
+.offcanvas-bottom {
+    height: 45vh !important;
+}
+
+.news-anchor {
+    font-family: 'Parabole';
+}
+
+.title-style {
+    font-family: 'Goudy Old Style' !important;
+    color: blue;
+}
+
+.heightoftext {
+    height: 800px;
+    max-height: 100%;
+}
+
+.title-head {
+    font-size: 71.72px;
+    line-height: 60.1px;
+}
+
+.word-start {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+.heightbody {
+    height: 1080px;
+    max-height: 100%;
+}
+
+.border-primary {
+    border-color: blue !important;
+}
+
+.focus {
+    color: blue !important;
+}
+
+.lart {
+    z-index: 30 !important;
+}
+
+.poshte {
+    z-index: 1 !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.listelement {
+    margin-left: 20px;
+}
+
+.back-blue {
+    background-color: blue !important;
+}
+
+.back-blue::after {
+    background-color: blue !important;
+}
+
+.vr {
+    border-color: blue !important;
+}
+
+.containing {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: solid 1px black;
+}
+
+.mobilehead {
+    font-size: .6;
+}
+
+.underline {
+    text-decoration: underline blue;
+}
+
+.overflowscroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bordermenu {
+    border-radius: 50px 50px 0 0;
+    box-shadow: none;
+}
+
+.imazhipatter {
+    background-image: url("./ikona/pattern.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+#paback {
+    background-color: transparent !important;
+}
+
+.colpikepese {
+    width: 7%;
+    max-width: 100%;
+} */
+
+#chartdiv {
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+}
+
+
+@font-face {
+    font-family: 'Goudy';
+    src: url('../assets/fonts/Goudy\ Old\ Style\ Bold.woff');
+    /* src: url('./src/fonts/Goudy\ Old\ Style\ Bold.woff'); */
+}
+
+@font-face {
+    font-family: 'Parabole';
+    src: url('../assets/fonts/Parabole.woff');
+    /* src: url('./src/fonts/Parabole.woff'); */
+}
+
+/* ----------------general */
+
+html {
+
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+
+    /* border: 1px solid white; */
+    /* box-shadow: -1px 10px 27px -12px rgb(0, 0, 0); */
+    width: 4vw;
+    height: 40px;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 10px 9px; */
+    /* margin: 0; */
+    margin: 3px 0;
+    flex: 0 0 auto
+}
+
+button :hover {
+
+    cursor: pointer;
+}
+
+
+html :-webkit-scrollbar {
+    display: none;
+}
+
+
+.par {
+    font-family: 'Parabole', Helvetica, sans-serif;
+    font-size: 3rem;
+    margin: -0.4rem;
+
+}
+
+.hel {
+    font-family: Helvetica, sans-serif;
+}
+
+.gou {
+    font-family: 'Goudy';
+}
+
+.capitalize {
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    transform: scaleY(1.07);
+}
+
+/* ----------------general */
+
+
+/* ----------------main */
+
+.logo {
+
+    position: fixed;
+    z-index: 3;
+    width: 10%;
+    left: 1vw;
+    top: 2vh;
+    background-color:  rgb(255, 255, 255 , 0.6);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid black;
+
+    box-shadow: -1px 10px 27px -12px rgba(0,4,255,1);
+
+
+}
+
+#hidden {
+
+    position: absolute;
+    font-size: 3rem;
+    display: none;
+}
+
+.logo img {
+    max-width: 100%;
+
+    /* opacity: 50%; */
+}
+
+
+.wrapper {
+
+    /* position: absolute; */
+    z-index: 4;
+    display: flex;
+    flex-flow: row ;
+    /* top: 0; */
+    /* left: 0; */
+
+}
+
+.chart {
+    width: 100vw;
+    z-index: 0;
+    position: absolute;
+
+}
+
+.chart img {
+    width: 100%;
+    top: -0vh;
+}
+
+
+.context-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    width: 47%;
+}
+
+.buttons {
+    /* position: absolute; */
+    z-index: 6;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    /* flex-shrink: 1; */
+
+    height: 95vh;
+    width: 2%;
+
+    /* background-color: white; */
+
+
+}
+
+.top , .bottom {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    /* height: 11vh; */
+    padding: 10px;
+    background-color:  rgb(255, 255, 255 , 0.6);
+
+    border-radius: 6px;
+    border: 1px solid black;
+
+    box-shadow: -1px 10px 27px -12px rgba(0,4,255,1);
+
+}
+
+.context {
+    /* display: none; */
+    width: 85%;
+    height: 94vh;
+    background-color:  rgb(255, 255, 255 , 0.6);
+    box-shadow: -1px 10px 27px -12px rgba(0,4,255,1);
+    z-index: 3;
+
+    overflow-y: scroll;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    border: 1px solid black;
+
+}
+
+
+
+.context::-webkit-scrollbar {
+    display: none;
+}
+/* ----------------main */
+
+/* ----------------legend */
+
+.legend {
+    /* background-color: black; */
+    /* color: white; */
+    position: fixed;
+    z-index: 3;
+    bottom: 2vh;
+    left: 1vw;
+    width: 40%;
+    overflow: hidden;
+    background-color:  rgb(255, 255, 255 , 0.6);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow:  -1px 10px 27px -12px rgba(0,4,255,1);
+    /* padding: 5px; */
+
+}
+
+/* .title {
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-family: Parabole;
+    font-size: 3rem;
+    text-align: center;
+} */
+
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+ul {
+    padding: 0px 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ----------------legend */
+
+
+/* ------------conteext */
+
+header {
+    /* width: 100%; */
+    display: none;
+    display: flex;
+    position: sticky;
+    width: inherit;
+    top: 0;
+    z-index: 2;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 1vh 1vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: -1px 10px 27px -12px rgb(0, 0, 0);
+
+
+}
+
+header img {
+
+    max-width: 15%;
+}
+
+
+.heading {
+    /* width: 100%; */
+    padding: 10px;
+    position: relative;
+    word-break: break-all;
+}
+
+.heading p {
+
+    font-size: 5.94em;
+    margin: 0;
+    color: blue;
+    line-height: 0.75em;
+    letter-spacing: -1pt;
+    word-spacing: 1em;
+    /* word-break: normal ; */
+
+    /* -webkit-transform: scaleX(0.5); */
+    transform: scale(1 , 1.1);
+}
+
+.first {
+    /* width: 70%; */
+    break-before: always;
+}
+
+.info {
+
+    padding-top: 1vh;
+}
+
+.introPic {
+    position: absolute;
+    z-index: -1;
+    top: 4vh;
+    right: 2vw;
+}
+
+article {
+
+    margin-top: 10vh;
+    padding: 10px;
+}
+/* ------------conteext */
+
+
+/* ----------paragraphs */
+
+.reg {
+    font-size: 1.47em;
+    line-height: 16pt;
+    letter-spacing: -0.4pt;
+}
+
+
+.additional {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.small {
+    width: 47%;
+    font-size: 1em;
+    line-height: 10.3pt;
+    letter-spacing: -0.2pt;
+    word-spacing: -0.02pt;
+    font-weight: 500;
+
+}
+
+
+.tiny {
+    width: 47%;
+    font-size: 0.8em;
+    line-height: 9pt;
+    letter-spacing: -0.15pt;
+    word-spacing: -0.02pt;
+}
+/* ----------paragraphs */
+
+
